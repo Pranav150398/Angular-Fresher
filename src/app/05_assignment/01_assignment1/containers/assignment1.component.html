@@ -1,3 +1,4 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 <div class="assignment1">
   <div class="alert alert-info">Follow the steps:</div>
   <ul class="list-group">
@@ -7,7 +8,19 @@
     <li class="list-group-item">Create handler in the component's class</li>
     <li class="list-group-item">Display the result on the page via string interpolation</li>
   </ul>
+
   <div class="container your-code">
-    <h6>Remove this &lt;h3&gt; and create your HTML here</h6>
+<div class="input-group-box">
+    <span class="input-group-text">Input Data</span>
   </div>
+  <input #boxinp type="text" placeholder="Enter Data" (input)=updateChange(boxinp.value)>
+<p>{{value}}</p>
+  <button class="btn btn-primary" type="submit">Submit</button>
+  
+
+  
+      
+    
+</div>
+
 </div>
